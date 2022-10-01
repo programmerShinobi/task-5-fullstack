@@ -3,7 +3,7 @@
 
 ## Author
 
-Laravel 8 blog dibaut oleh :
+Laravel 8 Articles dibuat oleh :
 
 - Github : <a href="https://github.com/programmerShinobi"> Faqih Pratama Muhti | programmerShinobi </a>
 
