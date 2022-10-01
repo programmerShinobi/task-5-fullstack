@@ -18,43 +18,60 @@ Laravel 8 Articles dibuat oleh :
 ## User
 
 **Admin**
-
 - email: "matches the database in the users table" 
 - Password: password
 
 
 ## Run This Apps
 - Download the master branch in terminal
-	> git clone https://github.com/programmerShinobi/task-5-fullstack.git
+	``` 
+    git clone https://github.com/programmerShinobi/task-5-fullstack.git
+    ```
 - Install the composer dependencies in terminal
-	> composer install
+	```
+    composer install
+    ```
 - Make a file .env from .env.example and setting your config & create database name :  articles_db
-    > APP_URL=http://127.0.0.1:8000
-    > ...
-    > DB_CONNECTION=mysql
-    > DB_HOST=127.0.0.1
-    > DB_PORT=3306
-    > DB_DATABASE=articles_db
-    > DB_USERNAME=root
-    > DB_PASSWORD=
+    APP_URL=http://127.0.0.1:8000
+    ...
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=articles_db
+    DB_USERNAME=root
+    DB_PASSWORD=
+    ```
 - Dont forget generate key from Laravel artisan in terminal
-	> php artisan key:generate
+	```
+    php artisan key:generate
+    ```
 - Run composer update in terminal
-	> composer update
+	```
+    composer update
+    ```
 - Run Seed and faker in terminal
-	> php artisan migrate:fresh --seed
+	```
+    php artisan migrate:fresh --seed
+    ```
 - Run passport in terminal
-	> php artisan passport:install
+	```
+    php artisan passport:install
+    ```
 - Dont forget copy-paste the latest "Client ID" & "Client secret" to App/Http/Controllers/Api/Auth/LoginController.php
-    > ...
-    > 'client_id' => '...',
-    > 'client_secret' => '...',
-    > ... 
+    ```
+    ...
+    'client_id' => '...',
+    'client_secret' => '...',
+    ... 
+    ```
 - Run serve in terminal
-    > php artisan serve
+    ```
+    php artisan serve
+    ```
 - Run apps in terminal
-	> http://127.0.0.1:8000
-
+	```
+    http://127.0.0.1:8000
+    ```
 
 ## If you have some suggestion ||~
 Just Contact Me At:
