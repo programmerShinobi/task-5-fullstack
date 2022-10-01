@@ -9,9 +9,9 @@ Laravel 8 Articles dibuat oleh :
 
 ## Fitur 
 
-- Autentikasi JWT
-- CRUD REST-API (Categories & Posts)
-- Autentikasi Login
+- JWT Authentication
+- CRUD RESTful-API (Categories & Posts)
+- Login Authentication
 - CRUD Categories
 - CRUD Posts
 
