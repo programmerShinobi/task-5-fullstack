@@ -57,12 +57,11 @@ Laravel 8 Articles dibuat oleh :
 	```
     php artisan passport:install
     ```
-- Dont forget copy-paste the latest "Client ID" & "Client secret" to App/Http/Controllers/Api/Auth/LoginController.php
+- Dont forget copy-paste the latest "Client ID" & "Client secret"
+  to App/Http/Controllers/Api/Auth/LoginController.php
     ```
-    ...
     'client_id' => '...',
     'client_secret' => '...',
-    ... 
     ```
 - Run serve in terminal
     ```
