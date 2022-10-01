@@ -32,6 +32,8 @@ Laravel 8 Articles dibuat oleh :
     composer install
     ```
 - Make a file .env from .env.example and setting your config & create database name :  articles_db
+    ```
+    ...
     APP_URL=http://127.0.0.1:8000
     ...
     DB_CONNECTION=mysql
@@ -40,6 +42,7 @@ Laravel 8 Articles dibuat oleh :
     DB_DATABASE=articles_db
     DB_USERNAME=root
     DB_PASSWORD=
+    ...
     ```
 - Dont forget generate key from Laravel artisan in terminal
 	```
@@ -60,8 +63,10 @@ Laravel 8 Articles dibuat oleh :
 - Dont forget copy-paste the latest "Client ID" & "Client secret"
   to App/Http/Controllers/Api/Auth/LoginController.php
     ```
+    ...
     'client_id' => '...',
     'client_secret' => '...',
+    ...
     ```
 - Run serve in terminal
     ```
