@@ -7,7 +7,7 @@ Laravel 8 Articles dibuat oleh :
 
 - Github : <a href="https://github.com/programmerShinobi"> Faqih Pratama Muhti | programmerShinobi </a>
 
-## Fitur 
+## Feature 
 
 - JWT Authentication
 - CRUD RESTful-API (Categories & Posts)
