@@ -60,13 +60,22 @@ Laravel 8 Articles created by :
 	```
     php artisan passport:install
     ```
-- Dont forget copy-paste the latest "Client ID" & "Client secret"
-  to App/Http/Controllers/Api/Auth/LoginController.php
+- Dont forget copy-paste the latest "Client ID" & "Client secret" to App/Http/Controllers/Api/Auth/LoginController.php
     ```
     ...
     'client_id' => '...',
     'client_secret' => '...',
     ...
+    ```
+- Dont forget setting your URL : 'http://127.0.0.1:8000' in config/app.php
+    ```
+    ...
+    'url' => env('APP_URL', 'http://127.0.0.1:8000'),
+    ...
+    ```
+- Run jwt authentication
+    ```
+    php artisan jwt:secret
     ```
 - Run serve in terminal
     ```
