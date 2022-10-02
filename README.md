@@ -4,7 +4,7 @@
 ## Author
 Laravel 8 Articles created by :
 
-- Github : <a href="https://github.com/programmerShinobi"> Faqih Pratama Muhti | programmerShinobi </a>
+- Github -----> <a href="https://github.com/programmerShinobi"> Faqih Pratama Muhti | programmerShinobi </a>
 
 ## Feature 
 - JWT Authentication
@@ -15,8 +15,8 @@ Laravel 8 Articles created by :
 
 ## User
 **Admin**
-- Email     : "matches the database in the users table" 
-- Password  : password
+- Email -----> "matches the database in the users table" 
+- Password --> password
 
 
 ## Run This Apps
@@ -89,5 +89,5 @@ Laravel 8 Articles created by :
 
 ## If you have some suggestion ||~
 Just Contact Me At :
-- Email     : [faqihpratamamuhti@gmail.com](mailto:faqihpratamamuhti@gmail.com)
-- LinkedIn  : <a href:"https://www.linkedin.com/in/faqih-pratama-muhti-9a75a2130/"> Faqih Pratama Muhti | programmerShinobi </a>
+- Email -----> [faqihpratamamuhti@gmail.com](mailto:faqihpratamamuhti@gmail.com)
+- LinkedIn --> <a href="https://www.linkedin.com/in/faqih-pratama-muhti-9a75a2130/"> Faqih Pratama Muhti | programmerShinobi </a>
