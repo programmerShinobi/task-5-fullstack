@@ -91,4 +91,4 @@ Laravel 8 Articles created by :
 ## If you have some suggestion ||~
 Just Contact Me At :
 - Email -----> [faqihpratamamuhti@gmail.com](mailto:faqihpratamamuhti@gmail.com)
-- LinkedIn --> <a href="https://www.linkedin.com/in/faqih-pratama-muhti-9a75a2130/"> Faqih Pratama Muhti | programmerShinobi </a>
+- LinkedIn --> <a href="https://www.linkedin.com/in/faqih-pratama-muhti-9a75a2130/">Faqih Pratama Muhti | programmerShinobi </a>
