@@ -21,7 +21,7 @@ class PostsController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth', ['except' => ['show', 'article']]);
+        $this->middleware(['auth', 'verified'], ['except' => ['show', 'article']]);
     }
 
     /**

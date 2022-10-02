@@ -16,7 +16,7 @@ use Tymon\JWTAuth\Contracts\JWTSubject;
 // use Laravel\Sanctum\HasApiTokens;
 
 
-class User extends Authenticatable implements JWTSubject
+class User extends Authenticatable implements JWTSubject, MustVerifyEmail
 {
     use HasFactory, Notifiable, HasApiTokens;
 

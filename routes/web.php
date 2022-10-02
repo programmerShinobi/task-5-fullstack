@@ -26,6 +26,9 @@ use App\Http\Controllers\DatatablesController;
 
 Auth::routes();
 
+//verifikasi email user
+Auth::routes(['verify' => true]);
+
 Route::get('/', [PostsController::class, 'article']);
 
 Route::get('/home', [PostsController::class, 'posts_management'])->name('home');
