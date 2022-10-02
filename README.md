@@ -4,7 +4,7 @@
 ## Author
 Laravel 8 Articles created by :
 
-- Github -----> <a href="https://github.com/programmerShinobi" target="_blank"> Faqih Pratama Muhti | programmerShinobi </a>
+- Github : <a href="https://github.com/programmerShinobi"> Faqih Pratama Muhti | programmerShinobi </a>
 
 ## Feature 
 - JWT Authentication
@@ -15,8 +15,8 @@ Laravel 8 Articles created by :
 
 ## User
 **Admin**
-- Email -----> "matches the database in the users table" 
-- Password --> password
+- Email     : "matches the database in the users table" 
+- Password  : password
 
 
 ## Run This Apps
@@ -86,9 +86,9 @@ Laravel 8 Articles created by :
     ```
     http://127.0.0.1:8000/api/...
     ```
-- If you run RESTfull API in testing tool using Postman, just download the file from <a target="_blank" href="https://drive.google.com/drive/folders/1K9QZvuj60_n9RNjl2FkRTUYCrieAvdOm?usp=sharing">**this google drive link**</a>. And then import the file into your API testing tool using Postman
+- If you run RESTfull API in testing tool using Postman, just download the file from <a href="https://drive.google.com/drive/folders/1K9QZvuj60_n9RNjl2FkRTUYCrieAvdOm?usp=sharing">**this google drive link**</a>. And then import the file into your API testing tool using Postman
 
 ## If you have some suggestion ||~
 Just Contact Me At :
-- Email -----> <a target="_blank" href="mailto:faqihpratamamuhti@gmail.com">faqihpratamamuhti@gmail.com</a>
-- LinkedIn --> <a target="_blank" href="https://www.linkedin.com/in/faqih-pratama-muhti-9a75a2130/">Faqih Pratama Muhti</a>
+- Email     : <a href="mailto:faqihpratamamuhti@gmail.com">faqihpratamamuhti@gmail.com</a>
+- LinkedIn  : <a href="https://www.linkedin.com/in/faqih-pratama-muhti-9a75a2130/">Faqih Pratama Muhti</a>
