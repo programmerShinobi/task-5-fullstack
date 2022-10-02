@@ -73,7 +73,7 @@ Laravel 8 Articles created by :
     'url' => env('APP_URL', 'http://127.0.0.1:8000'),
     ...
     ```
-- Run jwt authentication
+- Run JWT authentication
     ```
     php artisan jwt:secret
     ```
@@ -85,7 +85,7 @@ Laravel 8 Articles created by :
 	```
     http://127.0.0.1:8000
     ```
-- Run RESTfull API
+- Run RESTfull API in API testing tool
     ```
     http://127.0.0.1:8000/api/...
     ```
