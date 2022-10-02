@@ -72,7 +72,7 @@ Laravel 8 Articles created by :
     ```
     php artisan serve
     ```
-- Run apps in terminal
+- Run apps in web browser
 	```
     http://127.0.0.1:8000
     ```
