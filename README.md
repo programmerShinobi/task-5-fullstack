@@ -85,7 +85,10 @@ Laravel 8 Articles created by :
 	```
     http://127.0.0.1:8000
     ```
-- Run RESTfull API use URL : http://127.0.0.1:8000/api/...
+- Run RESTfull API
+    ```
+    http://127.0.0.1:8000/api/...
+    ```
 
 ## If you have some suggestion ||~
 Just Contact Me At :
