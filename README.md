@@ -4,7 +4,7 @@
 ## Author
 Laravel 8 Articles created by :
 
-- Github -----> <a href="https://github.com/programmerShinobi"> Faqih Pratama Muhti | programmerShinobi </a>
+- Github -----> <a href="https://github.com/programmerShinobi" target="_blank"> Faqih Pratama Muhti | programmerShinobi </a>
 
 ## Feature 
 - JWT Authentication
@@ -57,14 +57,14 @@ Laravel 8 Articles created by :
 	```
     php artisan passport:install
     ```
-- Dont forget copy-paste the latest "Client ID" & "Client secret" to App/Http/Controllers/Api/Auth/LoginController.php
+- Dont forget copy-paste the latest "Client ID" & "Client secret" to app/Http/Controllers/Api/Auth/LoginController.php
     ```
     ...
     'client_id' => '...',
     'client_secret' => '...',
     ...
     ```
-- Dont forget setting your URL : 'http://127.0.0.1:8000' in config/app.php
+- Dont forget setting your URL in config/app.php
     ```
     ...
     'url' => env('APP_URL', 'http://127.0.0.1:8000'),
@@ -86,9 +86,9 @@ Laravel 8 Articles created by :
     ```
     http://127.0.0.1:8000/api/...
     ```
-- If you run RESTfull API in testing tool using Postman, just download the file from <a href="https://drive.google.com/drive/folders/1K9QZvuj60_n9RNjl2FkRTUYCrieAvdOm?usp=sharing">**this google drive link**</a>. And then import the file into your API testing tool using Postman
+- If you run RESTfull API in testing tool using Postman, just download the file from <a href="https://drive.google.com/drive/folders/1K9QZvuj60_n9RNjl2FkRTUYCrieAvdOm?usp=sharing" target="_blank">**this google drive link**</a>. And then import the file into your API testing tool using Postman
 
 ## If you have some suggestion ||~
 Just Contact Me At :
-- Email -----> [faqihpratamamuhti@gmail.com](mailto:faqihpratamamuhti@gmail.com)
-- LinkedIn --> <a href="https://www.linkedin.com/in/faqih-pratama-muhti-9a75a2130/">Faqih Pratama Muhti | programmerShinobi </a>
+- Email -----> <a href="mailto:faqihpratamamuhti@gmail.com" target="_blank">faqihpratamamuhti@gmail.com</a>
+- LinkedIn --> <a href="https://www.linkedin.com/in/faqih-pratama-muhti-9a75a2130/" target="_blank">Faqih Pratama Muhti</a>
