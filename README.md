@@ -10,7 +10,7 @@ Laravel 8 Articles created by :
 ## Feature 
 
 - JWT Authentication
-- CRUD RESTful-API (Categories & Posts)
+- CRUD RESTfull-API (Categories & Posts)
 - Login Authentication
 - CRUD Categories
 - CRUD Posts
@@ -85,7 +85,9 @@ Laravel 8 Articles created by :
 	```
     http://127.0.0.1:8000
     ```
+- Run RESTfull API use URL : http://127.0.0.1:8000/api/...
 
 ## If you have some suggestion ||~
-Just Contact Me At:
-- Email: [faqihpratamamuhti@gmail.com](mailto:faqihpratamamuhti@gmail.com)
+Just Contact Me At :
+- Email     : [faqihpratamamuhti@gmail.com](mailto:faqihpratamamuhti@gmail.com)
+- LinkedIn  : <a href:"https://www.linkedin.com/in/faqih-pratama-muhti-9a75a2130/"> Faqih Pratama Muhti | programmerShinobi </a>
