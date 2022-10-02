@@ -2,13 +2,11 @@
 <p>Virtual Internship Experience (Investree) - Fullstack - Faqih Pratama Muhti</p>
 
 ## Author
-
 Laravel 8 Articles created by :
 
 - Github : <a href="https://github.com/programmerShinobi"> Faqih Pratama Muhti | programmerShinobi </a>
 
 ## Feature 
-
 - JWT Authentication
 - CRUD RESTfull-API (Categories & Posts)
 - Login Authentication
@@ -16,10 +14,9 @@ Laravel 8 Articles created by :
 - CRUD Posts
 
 ## User
-
 **Admin**
-- email: "matches the database in the users table" 
-- Password: password
+- Email     : "matches the database in the users table" 
+- Password  : password
 
 
 ## Run This Apps
