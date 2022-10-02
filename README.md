@@ -25,7 +25,7 @@ Laravel 8 Articles created by :
 ## Run This Apps
 - Download the master branch in terminal
 	``` 
-    git clone https://github.com/programmerShinobi/task-5-fullstack.git
+    git clone git@github.com:programmerShinobi/task-5-fullstack.git
     ```
 - Install the composer dependencies in terminal
 	```
