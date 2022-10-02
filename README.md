@@ -3,7 +3,7 @@
 
 ## Author
 
-Laravel 8 Articles dibuat oleh :
+Laravel 8 Articles created by :
 
 - Github : <a href="https://github.com/programmerShinobi"> Faqih Pratama Muhti | programmerShinobi </a>
 
