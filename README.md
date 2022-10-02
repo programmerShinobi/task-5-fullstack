@@ -9,6 +9,7 @@ Laravel 8 Articles created by :
 ## Feature 
 - JWT Authentication
 - CRUD RESTfull-API (Categories & Posts)
+- Verify Email Users
 - Login Authentication
 - CRUD Categories
 - CRUD Posts
