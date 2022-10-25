@@ -13,10 +13,10 @@
                     <tr>
                         <td>{{ $no1++ }}</td>
                         <td><a href='posts/{{ $post1->id }}/'>{{ $post1->title }}</a></td>
-                        <td>{{ $post1->category->name }}</td>
+                        <td>{{ $post1->category }}</td>
                         <td>
-                            <a class='btn btn-sm btn-outline-dark m-1' href='home/{{ $post1->id }}/draft'><em class='fa-solid fa-sheet-plastic'></em> Draft</a>
-                            <a class='btn btn-sm btn-outline-danger m-1' href='home/{{ $post1->id }}/trash'><em class='fa-solid fa-trash'></em> Trash</a>
+                            <a class='btn btn-sm btn-outline-dark m-1' href='posts/{{ $post1->id }}/draft'><em class='fa-solid fa-sheet-plastic'></em> Draft</a>
+                            <a class='btn btn-sm btn-outline-danger m-1' href='posts/{{ $post1->id }}/trash'><em class='fa-solid fa-trash'></em> Trash</a>
                         </td>
                     </tr>
                 @endif

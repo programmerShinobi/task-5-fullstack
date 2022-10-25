@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Models\Post;
+use App\Models\Article;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Http\Resources\PostResource;
+use App\Http\Resources\ArticleResource;
 use Illuminate\Support\Facades\Validator;
 
-class PostsController extends Controller
+class ArticlesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,11 +17,11 @@ class PostsController extends Controller
      */
     public function index()
     {
-        $post = Post::with('user')->latest()->paginate(10);
+        $article = Article::latest()->paginate();
         return response([
-            'success' => true,
-            'message' => 'List All Posts',
-            'data' => PostResource::collection($post)
+            'success'   => true,
+            'message'   => 'List All Posts',
+            'data'      => ArticleResource::collection($article)
         ], 200);
     }
 
@@ -37,20 +37,16 @@ class PostsController extends Controller
         $validator = Validator::make(
             $request->all(),
             [
-                'title'     => 'required',
-                'content'   => 'required',
-                'image' => 'required',
-                'status' => 'required',
-                'category_id' => 'required',
-                'user_id' => 'required'
+                'title'     => 'required|min:20|',
+                'content'   => 'required|min:200',
+                'category'  => 'required|min:3',
+                'status'    => 'required|in:publish,draft,trash',
             ],
             [
-                'title.required' => 'Enter Post Title  !',
-                'content.required' => 'Enter Post Content  !',
-                'image.required' => 'Enter Post Image  !',
-                'status.required' => 'Enter Post Status  !',
-                'category_id.required' => 'Enter Post Category  !',
-                'user_id.required' => 'Enter Post User  !'
+                'title.required'    => 'Enter Post Title  !',
+                'content.required'  => 'Enter Post Content  !',
+                'category.required' => 'Enter Post Category  !',
+                'status.required'   => 'Enter Post Status  !',
             ]
         );
 
@@ -58,32 +54,29 @@ class PostsController extends Controller
 
             return response()->json([
                 'success' => false,
-                'message' => 'Please Fill in the Empty Columns',
+                'message' => 'Please Fill in the Columns',
                 'data'    => $validator->errors()
             ], 400);
         } else {
 
-            $post = Post::create([
+            $article = Article::create([
                 'title'     => $request->input('title'),
                 'content'   => $request->input('content'),
-                'image'   => $request->input('image'),
-                'status'   => $request->input('status'),
-                'category_id'   => $request->input('category_id'),
-                'user_id'   => $request->input('user_id')
+                'category'  => $request->input('category'),
+                'status'    => $request->input('status'),
             ]);
 
-
-            if ($post) {
+            if ($article) {
                 return response()->json([
                     'success' => true,
                     'message' => 'Your post has been submitted!',
-                    'post' => new PostResource($post),
+                    'post'    => new ArticleResource($article),
                 ], 200);
             } else {
                 return response()->json([
                     'success' => false,
                     'message' => 'Your post has not been submitted!',
-                    'post' => new PostResource($post),
+                    'post'    => new ArticleResource($article),
                 ], 400);
             }
         }
@@ -92,18 +85,18 @@ class PostsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Post  $post
+     * @param  \App\Models\Article  $article
      * @return \Illuminate\Http\Response
      */
-    public function show(Post $post)
+    public function show(Article $article)
     {
-        $post = Post::whereId($post->id)->first();
+        $article = Article::whereId($article->id)->first();
 
-        if ($post) {
+        if ($article) {
             return response()->json([
                 'success' => true,
                 'message' => 'Post Details!',
-                'data'    => new PostResource($post)
+                'data'    => new ArticleResource($article)
             ], 200);
         } else {
             return response()->json([
@@ -118,29 +111,25 @@ class PostsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Post  $post
+     * @param  \App\Models\Article  $article
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Post $post)
+    public function update(Request $request, Article $article)
     {
         //validate data
         $validator = Validator::make(
             $request->all(),
             [
-                'title'     => 'required',
-                'content'   => 'required',
-                'image' => 'required',
-                'status' => 'required',
-                'category_id' => 'required',
-                'user_id' => 'required'
+                'title'     => 'required|min:20',
+                'content'   => 'required|min:200',
+                'category'  => 'required|min:3',
+                'status'    => 'required|in:publish,draft,trash',
             ],
             [
-                'title.required' => 'Enter Post Title !',
-                'content.required' => 'Enter Post Content !',
-                'image.required' => 'Enter Post Image !',
-                'status.required' => 'Enter Post Status !',
-                'category_id.required' => 'Enter Post Category !',
-                'user_id.required' => 'Enter Post User !'
+                'title.required'    => 'Enter Post Title !',
+                'content.required'  => 'Enter Post Content !',
+                'category.required' => 'Enter Post Category !',
+                'status.required'   => 'Enter Post Status !',
             ]
         );
 
@@ -148,20 +137,18 @@ class PostsController extends Controller
 
             return response()->json([
                 'success' => false,
-                'message' => 'Please Fill in the Empty Columns',
+                'message' => 'Please Fill in the Columns',
                 'data'    => $validator->errors()
             ], 400);
         } else {
-            $post = Post::whereId($request->input('id'))->update([
+            $article = Article::whereId($article->id)->update([
                 'title'     => $request->input('title'),
                 'content'   => $request->input('content'),
-                'image'   => $request->input('image'),
-                'status'   => $request->input('status'),
-                'category_id'   => $request->input('category_id'),
-                'user_id'   => $request->input('user_id'),
+                'category'  => $request->input('category'),
+                'status'    => $request->input('status'),
             ]);
 
-            if ($post) {
+            if ($article) {
                 return response()->json([
                     'success' => true,
                     'message' => 'Post Successfully Updated !',
@@ -178,15 +165,15 @@ class PostsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Post  $post
+     * @param  \App\Models\Article  $article
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Post $post)
+    public function destroy(Article $article)
     {
-        $post = Post::findOrFail($post->id);
-        $post->delete();
+        $article = Article::findOrFail($article->id);
+        $article->delete();
 
-        if ($post) {
+        if ($article) {
             return response()->json([
                 'success' => true,
                 'message' => 'Post Deleted Successfully !',

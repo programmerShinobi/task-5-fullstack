@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Post extends Model
+class Article extends Model
 {
     use HasFactory;
 
@@ -26,7 +26,7 @@ class Post extends Model
 
     public function getUrlAttribute()
     {
-        return route("posts.show", $this->id);
+        return route("article.show", $this->id);
     }
 
     public function getCreatedDateAttribute()

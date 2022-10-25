@@ -17,15 +17,9 @@ class CreatePostsTable extends Migration
             $table->id();
             $table->string('title');
             $table->text('content');
-            $table->string('status');
-            $table->unsignedBigInteger('category_id');
-            $table->unsignedBigInteger('user_id');
+            $table->string('category');
+            $table->enum('status', ['publish', 'draft', 'trash']);
             $table->timestamps();
-        });
-
-        Schema::table('posts', function (Blueprint $table) {
-            $table->foreign('category_id')->references('id')->on('categories');
-            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 

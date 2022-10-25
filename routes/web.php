@@ -22,21 +22,12 @@ use App\Http\Controllers\DatatablesController;
 |
 */
 
-Auth::routes();
-
-//verifikasi email user
-Auth::routes(['verify' => true]);
-
-Route::get('/', [PostsController::class, 'article']);
-
-Route::get('/home', [PostsController::class, 'posts_management'])->name('home');
-
-Route::get('home/{id}/publish', [PostsController::class, 'move_to_publish']);
-
-Route::get('home/{id}/draft', [PostsController::class, 'move_to_draft']);
-
-Route::get('home/{id}/trash', [PostsController::class, 'move_to_trash']);
-
 Route::resource('posts', PostsController::class);
 
-Route::resource('categories', CategoriesController::class);
+Route::get('posts/{id}/publish', [PostsController::class, 'move_to_publish']);
+
+Route::get('posts/{id}/draft', [PostsController::class, 'move_to_draft']);
+
+Route::get('posts/{id}/trash', [PostsController::class, 'move_to_trash']);
+
+Route::get('/', [PostsController::class, 'article']);

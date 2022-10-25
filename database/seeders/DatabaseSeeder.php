@@ -18,16 +18,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         DB::table('posts')->delete();
-        DB::table('categories')->delete();
-        DB::table('users')->delete();
 
-        User::factory(3)->create()->each(function ($u) {
-            $u->categories()
-                ->saveMany(
-                    Category::factory(5)->make()
-                )->each(function ($c) {
-                    $c->posts()->saveMany(Post::factory(5)->make());
-                });
-        });
+        Post::factory(50)->create();
     }
 }

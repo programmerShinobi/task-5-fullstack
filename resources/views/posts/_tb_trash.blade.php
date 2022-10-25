@@ -13,13 +13,13 @@
                 <tr>
                     <td>{{ $no3++ }}</td>
                     <td><a href='posts/{{ $post3->id }}/'>{{ $post3->title }}</a></td>
-                    <td>{{ $post3->category->name }}</td>
+                    <td>{{ $post3->category }}</td>
                     <td class="d-grid d-md-flex">
                         <div>
                             <form class="form-delete" action="{{ route('posts.destroy', $post3->id) }}" method="post">
                                 @method('DELETE')
                                 @csrf
-                                <a class='btn btn-sm btn-outline-dark m-1' href='home/{{ $post3->id }}/draft'><em class='fa-solid fa-sheet-plastic'></em> Draft</a>
+                                <a class='btn btn-sm btn-outline-dark m-1' href='posts/{{ $post3->id }}/draft'><em class='fa-solid fa-sheet-plastic'></em> Draft</a>
                                 <button type="submit" class="btn btn-sm btn-outline-danger m-1" onclick="return confirm('Are you sure?')"><em class="fa-solid fa-trash"></em> Delete</button>
                             </form>
                         </div>

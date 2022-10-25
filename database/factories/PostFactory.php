@@ -16,12 +16,10 @@ class PostFactory extends Factory
     public function definition()
     {
         return [
-            'title' => $this->faker->text(100),
+            'title' => $this->faker->text(50),
             'content' => $this->faker->paragraphs(25, true),
-            'image' => "default.jpg",
+            'category' => $this->faker->unique()->streetSuffix(10),
             'status' => $this->faker->randomElement(['publish', 'draft', 'trash']),
-            'category_id' => $this->faker->numberBetween(1, Category::count()),
-            'user_id' => $this->faker->numberBetween(1, User::count())
         ];
     }
 }

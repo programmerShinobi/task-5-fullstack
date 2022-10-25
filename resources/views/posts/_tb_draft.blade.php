@@ -13,10 +13,10 @@
                 <tr>
                     <td>{{ $no2++ }}</td>
                     <td><a href='posts/{{ $post2->id }}/'>{{ $post2->title }}</a></td>
-                    <td>{{ $post2->category->name }}</td>
+                    <td>{{ $post2->category }}</td>
                     <td>
                         <a href="{{ route('posts.edit', $post2->id) }}" class="btn btn-sm btn-outline-dark m-1"><em class="fa-solid fa-pen-to-square"></em> Edit</a>
-                        <a class='btn btn-sm btn-outline-danger m-1' href='home/{{ $post2->id }}/trash'><em class='fa-solid fa-trash'></em> Trash</a>
+                        <a class='btn btn-sm btn-outline-danger m-1' href='posts/{{ $post2->id }}/trash'><em class='fa-solid fa-trash'></em> Trash</a>
                     </td>
                 </tr>
                 @endif
